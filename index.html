@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>PowerFit Academia - Transforme Seu Corpo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -13,20 +13,28 @@
         
         .whatsapp-float {
             position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
+            width: 50px;
+            height: 50px;
+            bottom: 20px;
+            right: 20px;
             background-color: #25d366;
             color: #FFF;
             border-radius: 50px;
             text-align: center;
-            font-size: 30px;
+            font-size: 24px;
             box-shadow: 2px 2px 3px #999;
             z-index: 100;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        @media (max-width: 640px) {
+            .whatsapp-float {
+                width: 45px;
+                height: 45px;
+                font-size: 22px;
+            }
         }
         .plan-card:hover {
             transform: translateY(-10px);
@@ -103,12 +111,12 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-80 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/mulheres-jovens-participando-da-aula-de-spinning.jpg');">
+    <section id="home" class="pt-24 pb-16 md:pt-40 md:pb-80 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/mulheres-jovens-participando-da-aula-de-spinning.jpg'); background-size: cover; background-position: center;">
         <div class="container mx-auto px-6">
             <div class="md:w-2/3 lg:w-1/2" data-aos="fade-right">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Transforme Seu Corpo. Supere Seus Limites!</h1>
-                <p class="text-xl md:text-2xl mb-8">Treine com os melhores profissionais e alcance seus objetivos mais rápido.</p>
-                <a href="https://wa.me/5511999999999?text=Olá! Quero agendar minha aula experimental gratuita" class="bg-green-400 hover:bg-green-500 text-black font-bold py-4 px-8 rounded-full text-lg transition inline-block">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 px-4">Transforme Seu Corpo. Supere Seus Limites!</h1>
+                <p class="text-lg sm:text-xl md:text-2xl mb-8 px-4">Treine com os melhores profissionais e alcance seus objetivos mais rápido.</p>
+                <a href="https://wa.me/5511999999999?text=Olá! Quero agendar minha aula experimental gratuita" class="bg-green-400 hover:bg-green-500 text-black font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-base sm:text-lg transition inline-block mx-4">
                     Agendar Aula Experimental
                 </a>
             </div>
@@ -116,13 +124,13 @@
     </section>
 
     <!-- Benefits Section -->
-    <section id="benefits" class="py-20 bg-gray-900">
+    <section id="benefits" class="py-12 sm:py-16 md:py-20 bg-gray-900">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Benefícios da Nossa Academia</h2>
                 <p class="text-xl text-gray-400 max-w-2xl mx-auto">Tudo que você precisa para alcançar seus objetivos fitness</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-0">
                 <div class="bg-gray-800 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-green-400 mb-4">
                         <i data-feather="activity" class="w-12 h-12"></i>
@@ -170,7 +178,7 @@
     </section>
 
     <!-- Plans Section -->
-    <section id="plans" class="py-24 bg-gradient-to-b from-black via-gray-900 to-black">
+    <section id="plans" class="py-12 sm:py-16 md:py-24 bg-gradient-to-b from-black via-gray-900 to-black">
         <div class="container mx-auto px-6">
             <!-- TÍTULO -->
             <div class="text-center mb-16" data-aos="fade-up">
@@ -181,7 +189,7 @@
             </div>
 
             <!-- CARDS DE PLANOS -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 sm:px-0">
                 <!-- PLANO MENSAL -->
                 <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 shadow-lg hover:shadow-green-400/30 transition-transform transform hover:-translate-y-2 plan-card"
                     data-aos="fade-up" data-aos-delay="100">
@@ -244,13 +252,13 @@
 
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-gray-900">
+    <section id="gallery" class="py-12 sm:py-16 md:py-20 bg-gray-900">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossa Academia</h2>
                 <p class="text-xl text-gray-400 max-w-2xl mx-auto">Conheça nosso espaço e equipamentos</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 sm:px-0">
                 <div class="overflow-hidden rounded-lg" data-aos="zoom-in">
                     <img src="assets/img/close-up-de-homem-fazendo-treino-de-crossfit.jpg" alt="Academia" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
                 </div>
@@ -274,29 +282,37 @@
     </section>
 
     <!-- Free Trial Section -->
-    <section class="py-20 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/close-up-de-homem-fazendo-treino-de-crossfit.jpg'); background-attachment: fixed; background-position: center 40%;">
-        <div class="container mx-auto px-6 text-center">
-            <div class="max-w-3xl mx-auto" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">Experimente antes de se matricular!</h2>
-                <p class="text-xl mb-8">Agende sua aula experimental gratuita e comece sua transformação hoje mesmo.</p>
-                <a href="https://wa.me/5511999999999?text=Olá! Quero agendar minha aula experimental gratuita" class="bg-green-400 hover:bg-green-500 text-black font-bold py-4 px-8 rounded-full text-lg transition inline-block">
-                    Agendar no WhatsApp
-                </a>
-            </div>
+  <section class="py-12 sm:py-16 md:py-20 bg-cover bg-center" 
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/close-up-de-homem-fazendo-treino-de-crossfit.jpg');
+           background-size: cover; 
+           background-position: center 30%; 
+           background-attachment: fixed;">
+    <div class="container mx-auto px-6 text-center">
+        <div class="max-w-3xl mx-auto" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Experimente antes de se matricular!</h2>
+            <p class="text-xl mb-8 text-gray-200">Agende sua aula experimental gratuita e comece sua transformação hoje mesmo.</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Quero agendar minha aula experimental gratuita" 
+               class="bg-green-400 hover:bg-green-500 text-black font-bold py-4 px-8 rounded-full text-lg transition inline-block">
+                Agendar no WhatsApp
+            </a>
         </div>
-    </section>
+    </div>
+  </section>
+
+
+
 
 
 
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-black">
+    <section id="testimonials" class="py-12 sm:py-16 md:py-20 bg-black">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Depoimentos</h2>
                 <p class="text-xl text-gray-400 max-w-2xl mx-auto">O que nossos alunos dizem sobre nós</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 sm:px-0">
                 <div class="bg-gray-900 p-8 rounded-lg testimonial-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-center mb-4">
                         <img src="http://static.photos/people/100x100/1" alt="Ana Souza" class="w-12 h-12 rounded-full mr-4">
@@ -353,13 +369,13 @@
     </section>
 
     <!-- Trainers Section -->
-    <section class="py-20 bg-black">
+    <section class="py-12 sm:py-16 md:py-20 bg-black">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossa Equipe</h2>
                 <p class="text-xl text-gray-400 max-w-2xl mx-auto">Profissionais qualificados para te ajudar a alcançar seus objetivos</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 sm:px-0">
                 <div class="bg-gray-900 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
                     <img src="assets/img/homem-atraente-em-forma-malhando-na-academia.jpg" alt="João Lima" class="w-full h-64 object-cover">
                     <div class="p-6">
@@ -389,7 +405,7 @@
     </section>
 
     <!-- Countdown Section -->
-    <section class="py-12 bg-green-400 text-black">
+    <section class="py-8 sm:py-10 md:py-12 bg-green-400 text-black">
         <div class="container mx-auto px-6 text-center">
             <div data-aos="fade-up">
                 <h2 class="text-2xl md:text-3xl font-bold mb-4">Promoção especial: 50% OFF no plano anual</h2>
@@ -420,7 +436,7 @@
     </section>
 
     <!-- FAQ Section -->
-   <section class="py-20 bg-gray-900">
+   <section class="py-12 sm:py-16 md:py-20 bg-gray-900">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Perguntas Frequentes</h2>
@@ -492,13 +508,13 @@
 </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-black">
+    <section id="contact" class="py-12 sm:py-16 md:py-20 bg-black">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Entre em Contato</h2>
                 <p class="text-xl text-gray-400 max-w-2xl mx-auto">Venha nos visitar ou fale conosco</p>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 sm:px-0">
                 <div data-aos="fade-right">
                     <div class="bg-gray-900 p-8 rounded-lg">
                         <h3 class="text-2xl font-bold mb-6">Informações</h3>
@@ -564,9 +580,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 py-12">
+    <footer class="bg-gray-900 py-8 sm:py-10 md:py-12">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 px-4 sm:px-0">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Vortex Gym</h3>
                     <p class="text-gray-400">Transformando vidas através do fitness desde 2015. Nossa missão é ajudar você a alcançar seus objetivos de forma saudável e sustentável.</p>
@@ -645,7 +661,7 @@
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.createElement('div');
-        mobileMenu.className = 'hidden fixed inset-0 bg-black bg-opacity-95 z-40 pt-28 px-6 backdrop-blur-sm';
+        mobileMenu.className = 'hidden fixed inset-0 bg-black bg-opacity-95 z-40 pt-20 px-4 backdrop-blur-sm';
         mobileMenu.id = 'mobile-menu';
         
         const menuLinks = [
@@ -659,14 +675,14 @@
         ];
 
         const menuContainer = document.createElement('div');
-        menuContainer.className = 'max-w-md mx-auto bg-gray-900 rounded-xl p-6 shadow-2xl';
+        menuContainer.className = 'w-full max-w-md mx-auto bg-gray-900 rounded-xl p-4 sm:p-6 shadow-2xl';
         
         menuLinks.forEach(link => {
             const a = document.createElement('a');
             a.href = link.href;
             a.className = link.class ? 
-                `block py-4 px-4 text-lg font-bold ${link.class} rounded-full text-center transition-all duration-300 transform hover:scale-105` :
-                'block py-4 px-4 text-lg text-white hover:text-green-400 hover:bg-gray-800 rounded-lg transition duration-300 font-medium';
+                `block py-3 px-4 sm:py-4 text-base sm:text-lg font-bold ${link.class} rounded-full text-center transition-all duration-300 transform hover:scale-105` :
+                'block py-3 px-4 sm:py-4 text-base sm:text-lg text-white hover:text-green-400 hover:bg-gray-800 rounded-lg transition duration-300 font-medium';
             a.textContent = link.text;
             a.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
